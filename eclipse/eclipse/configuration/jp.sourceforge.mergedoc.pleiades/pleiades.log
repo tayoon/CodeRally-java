@@ -1,0 +1,33 @@
+INFO  10:49:42.674 [main] (Pleiades) Pleiades 構成保管パス: E:\eclipse\configuration\jp.sourceforge.mergedoc.pleiades
+INFO  10:49:42.798 [pool-2-thread-1] (EclipseFiles) 前回のプラグイン更新最終時刻: 1970-01-01 09:00:00
+INFO  10:49:42.798 [pool-2-thread-1] (EclipseFiles) 今回のプラグイン更新最終時刻: 2015-10-07 10:49:33
+INFO  10:49:42.798 [pool-2-thread-1] (LauncherEclipseTransformer) Eclipse プラグインの更新が検出されたため、強制的に -clean モードで起動します。
+INFO  10:49:42.923 [main] (PleiadesConfig) Pleiades 構成ファイルをロードしました。
+INFO  10:49:42.923 [main] (Pleiades) Eclipse AOP 起動トランスフォーマーを開始します。Pleiades 起動オプション:null
+INFO  10:49:42.923 [pool-1-thread-2] (PropertySet) load  0.001 秒 -     67 エントリー translation-exclude-package.properties
+INFO  10:49:42.954 [pool-1-thread-3] (PropertySet) load  0.022 秒 -    359 エントリー translation-regex.properties
+INFO  10:49:42.970 [pool-1-thread-3] (PropertySet) load  0.001 秒 -     16 エントリー translation-regex-through.properties
+INFO  10:49:43.655 [main] (LauncherEclipseTransformer) transform: org.eclipse.equinox.launcher.Main
+INFO  10:49:43.780 [main] (LauncherTransformer) アプリケーションの起動を開始しました。-clean:true
+INFO  10:49:43.780 [main] (CacheFiles) すべてのキャッシュ・ファイルをクリアしました。
+INFO  10:49:43.951 [main] (LauncherTransformer) Pleiades AOP 翻訳トランスフォーマーを開始します。
+INFO  10:49:43.951 [pool-1-thread-1] (ExcludeClassNameCache) exclude-class.list が存在しません。
+INFO  10:49:43.967 [pool-1-thread-1] (TransformedClassCache) transformed-class.cache が存在しません。
+INFO  10:49:44.668 [pool-1-thread-1] (AbstractTranslationDictionary$1) load  0.572 秒 - 118309 エントリー translation.properties
+INFO  10:49:44.668 [pool-1-thread-1] (AbstractTranslationDictionary$1) load  0.003 秒 - 118424 エントリー translation-multibytes-key.properties
+INFO  10:49:44.683 [pool-1-thread-1] (ValueHashPropertySet) load  0.002 秒 -    115 エントリー translation-multibytes-key.properties
+INFO  10:49:59.795 [main] (LauncherEclipseTransformer) transform: org.eclipse.ui.internal.Workbench
+INFO  10:50:20.827 [main] (LauncherEclipseTransformer) transform: org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor
+INFO  10:50:21.107 [main] (LauncherEclipseTransformer) transform: org.eclipse.core.resources.ResourcesPlugin
+INFO  10:50:22.182 [main] (LauncherEclipseTransformer) transform: org.eclipse.ui.splash.BasicSplashHandler$AbsolutePositionProgressMonitorPart
+INFO  10:50:22.338 [Thread-8] (LauncherEclipseTransformer) transform: org.eclipse.ui.internal.WorkbenchWindow
+INFO  10:50:22.354 [Thread-8] (LauncherTransformer) Pleiades AOP 起動トランスフォーマーを停止します。
+INFO  10:50:30.486 [main] (Analyses) Eclipse 始動完了 - 始動時間: 46.504 秒。-clean:true
+INFO  10:50:38.977 [pleiades-shutdown] (TransformedClassCache) transformed-class.cache が存在しません。
+INFO  10:50:39.164 [pleiades-shutdown] (TransformedClassCache) store     468 エントリー transformed-class.cache
+INFO  10:50:39.164 [pleiades-shutdown] (ExcludeClassNameCache) exclude-class.list が存在しません。
+INFO  10:50:39.304 [pleiades-shutdown] (ExcludeClassNameCache) store   6912 エントリー exclude-class.list
+INFO  10:50:39.553 [pleiades-shutdown] (ValueHashPropertySet) store 0.245 秒 -  16985 エントリー translation-cache.properties.zip
+INFO  10:50:39.553 [pleiades-shutdown] (CachePropertySet) 翻訳キャッシュ・プロパティーを更新しました。
+INFO  10:50:39.569 [pleiades-shutdown] (CachePropertySet) store 0.013 秒 -   2274 エントリー mnemonic-cache.properties.zip
+INFO  10:50:39.569 [pleiades-shutdown] (CachePropertySet) ニーモニック変換キャッシュ・プロパティーを更新しました。

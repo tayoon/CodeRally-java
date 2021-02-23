@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Code Rally">
+<topic label="Installation" href="docs/installation.html"/>
+<topic label="Manual" href="docs/manual.html"/>
+<topic label="Tournament" href="docs/admin.html"/>
+<topic label="FAQ" href="docs/faq.html"/>
+</toc>

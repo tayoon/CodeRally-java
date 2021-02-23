@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Generated-from: 1065236616000;type=2
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: com.ibm.coderally; singleton:=true
+Bundle-Version: 1.1.1
+Bundle-ClassPath: launchPlugin.jar
+Bundle-Activator: org.eclipse.core.internal.compatibility.PluginActivator
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.ui.ide;resolution:=optional,
+ org.eclipse.ui.views;resolution:=optional,
+ org.eclipse.ui.editors;resolution:=optional,
+ org.eclipse.jface.text;resolution:=optional,
+ org.eclipse.ui.workbench.texteditor;resolution:=optional,
+ org.eclipse.core.resources,
+ org.eclipse.jdt.core,
+ org.eclipse.debug.core,
+ org.eclipse.debug.ui,
+ org.eclipse.jdt.debug,
+ org.eclipse.jdt.launching,
+ org.eclipse.core.runtime.compatibility,
+ org.eclipse.core.runtime;bundle-version="2.1"
+Eclipse-LazyStart: true
+Plugin-Class: com.ibm.jgfw.plugin.LaunchPlugin

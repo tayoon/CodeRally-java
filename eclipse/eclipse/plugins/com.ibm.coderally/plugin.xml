@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin
+	name="%pluginName"
+	id="com.ibm.coderally"
+	version="1.1.1"
+	provider-name="%providerName"
+	class="com.ibm.jgfw.plugin.LaunchPlugin">
+
+<requires>
+  <import plugin="org.eclipse.ui"/>
+  <import plugin="org.eclipse.core.resources"/>
+  <import plugin="org.eclipse.jdt.core"/>
+  <import plugin="org.eclipse.debug.core"/>
+  <import plugin="org.eclipse.debug.ui"/> 
+  <import plugin="org.eclipse.jdt.debug"/>
+  <import plugin="org.eclipse.jdt.launching"/>
+</requires>
+
+<runtime>
+  <library name="launchPlugin.jar"/>
+</runtime>
+
+<extension point="org.eclipse.ui.actionSets">
+  <actionSet
+      id="com.ibm.jgfw.actionSet"
+      label="%actionSet.label"
+      visible="true"
+      description="actionSet.description">
+    <action id="com.ibm.jgfw.action.submit"
+		toolbarPath="Normal/Game"
+		label="%action.submit.label"
+		tooltip="%action.submit.tooltip"
+		icon="icons/full/obj16/submit.gif"
+		class="com.ibm.jgfw.plugin.SubmitAction"/>
+    <action id="com.ibm.jgfw.action.tournament.debug"
+		toolbarPath="Normal/Game"
+		label="%action.tournament.debug.label"
+		tooltip="%action.tournament.debug.tooltip"
+		icon="icons/full/obj16/tournamentDebug.gif"
+		class="com.ibm.jgfw.plugin.TournamentDebugAction"/>
+	<action id="com.ibm.jgfw.action.tournament"
+		toolbarPath="Normal/Game"
+		label="%action.tournament.label"
+		tooltip="%action.tournament.tooltip"
+		icon="icons/full/obj16/tournament.gif"
+		class="com.ibm.jgfw.plugin.TournamentAction"/>
+    <action id="com.ibm.jgfw.action.test.debug"
+		toolbarPath="Normal/Game"
+		label="%action.test.debug.label"
+		tooltip="%action.test.debug.tooltip"
+		icon="icons/full/obj16/testDebug.gif"
+		class="com.ibm.jgfw.plugin.TestDebugAction"/>
+    <action id="com.ibm.jgfw.action.test"
+		toolbarPath="Normal/Game"
+		label="%action.test.label"
+		tooltip="%action.test.tooltip"
+		icon="icons/full/obj16/test.gif"
+		class="com.ibm.jgfw.plugin.TestAction"/>
+  </actionSet>
+</extension>
+
+<!-- ===================================================================== -->
+<!-- Extension point: org.eclipse.debug.core.launchConfigurationTypes      -->
+<!-- Purpose: Define the game launch configuration                         -->
+<!-- ===================================================================== -->
+<extension point="org.eclipse.debug.core.launchConfigurationTypes">
+  <launchConfigurationType
+    id="com.ibm.jgfw.launchConfigurationType"
+    name="%launchConfigurationType"
+    delegate="com.ibm.jgfw.plugin.LaunchConfigurationDelegate"
+    modes="run, debug">
+  </launchConfigurationType>
+</extension>
+
+<!-- ===================================================================== -->
+<!-- Extension point: org.eclipse.debug.ui.launchConfigurationTypeImages   -->
+<!-- Purpose: Define the launch configuration image                        -->
+<!-- ===================================================================== -->
+<extension point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+  <launchConfigurationTypeImage
+    id="com.ibm.jgfw.launchConfigurationTypeImage"
+    configTypeID="com.ibm.jgfw.launchConfigurationType"
+    icon="icons/full/obj16/challenge.gif">
+  </launchConfigurationTypeImage>
+</extension>
+
+<!-- ===================================================================== -->
+<!-- Extension point: org.eclipse.debug.ui.launchConfigurationTabGroups    -->
+<!-- Purpose: Define the launch configuration tab group                    -->
+<!-- ===================================================================== -->
+<extension point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+  <launchConfigurationTabGroup
+    id="com.ibm.jgfw.launchConfigurationTabGroup"
+    type="com.ibm.jgfw.launchConfigurationType"
+    class="com.ibm.jgfw.plugin.LaunchConfigurationTabGroup">
+  </launchConfigurationTabGroup>
+</extension>
+
+<!-- ======================================================= -->
+<!-- Extension point: org.eclipse.ui.preferencePages         -->
+<!-- Purpose: Plugin preferences                             -->
+<!-- ======================================================= -->
+<extension point="org.eclipse.ui.preferencePages">
+  <page
+    id="com.ibm.jgfw.preferencePage"
+    name="%preferencePageTitle"
+    class="com.ibm.jgfw.plugin.LaunchPreferencePage"/>
+</extension>
+
+</plugin>
